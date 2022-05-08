@@ -8,3 +8,22 @@
 body {
   font-family: "lato", "sans-serif";
 }
+h2 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+.page-container {
+  display: flex;
+  justify-content: center;
+}
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.day,
+.hour,
+.minute,
+.second {
+  font-size: 3rem;
+}
