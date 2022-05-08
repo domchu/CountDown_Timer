@@ -14,7 +14,12 @@ const countdown = () => {
   const textMinute = Math.floor((gap % hour) / minute);
   const textSecond = Math.floor((gap % minute) / second);
 
-  //   console.log(textDay);
+  //   Dom manipulation
+  document.querySelector(".day").innerHTML = textDay;
+  document.querySelector(".hour").innerHTML = textHour;
+  document.querySelector(".minute").innerHTML = textMinute;
+  document.querySelector(".second").innerHTML = textSecond;
 };
 
-countdown();
+setInterval(countdown, 1000);
+// countdown();
