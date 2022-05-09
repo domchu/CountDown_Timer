@@ -9,7 +9,7 @@
 
 body {
   font-family: "lato", "sans-serif";
-  background-image: url("/images/timer.jpg");
+  background-image: url("images/timer.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -54,6 +54,15 @@ h2::first-line {
 .hour,
 .minute,
 .second {
+  font-size: 3rem;
+  color: #000;
+}
+
+h3 {
+  color: #0571f8;
+}
+
+span {
   font-size: 3rem;
 }
 /*# sourceMappingURL=styles.css.map */

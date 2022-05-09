@@ -1,5 +1,5 @@
 const countdown = () => {
-  const countDate = new Date("may 31, 2022 00:00:00").getTime();
+  const countDate = new Date("may 30, 2022 00:00:00").getTime();
   const now = new Date().getTime();
   const gap = countDate - now;
 
@@ -8,6 +8,7 @@ const countdown = () => {
   const minute = second * 60;
   const hour = minute * 60;
   const day = hour * 24;
+
   //calculate the time
   const textDay = Math.floor(gap / day);
   const textHour = Math.floor((gap % day) / hour);
@@ -21,5 +22,6 @@ const countdown = () => {
   document.querySelector(".second").innerHTML = textSecond;
 };
 
+//the set interval of the timer
 setInterval(countdown, 1000);
 // countdown();
